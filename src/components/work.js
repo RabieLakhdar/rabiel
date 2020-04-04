@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Project from './project';
 import Fade from 'react-reveal/Fade';
-import data from '../yourdata';
+import data from '../data';
 
 class Work extends Component {
     state = {  }
