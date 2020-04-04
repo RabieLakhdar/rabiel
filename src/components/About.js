@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import data from '../data';
+import aboutP from '../assetes/rabiel.png';
 
 class About extends Component {
     state = {  }
@@ -12,7 +13,7 @@ class About extends Component {
                     <p>{data.abouttext}</p>
             </Fade>
             </div>
-            {data.ShowAboutImage ? <img src={data.aboutImage} alt='about iamge'></img> : null}
+            {data.ShowAboutImage ? <img style={{width:'600px', height:'600px'}} src={aboutP} alt='rabiel'></img> : null}
             
 
         </div>  );
