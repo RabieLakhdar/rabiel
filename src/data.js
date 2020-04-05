@@ -3,7 +3,7 @@ export default {
   headerTagline: [
     "Hi 👋 You found me! I am Rabie LAKHDAR.",
     "Full Stack JS Engineer ",
-    "from Morocco",
+    "ReactJs,React Native, NodeJS ...",
   ],
   contactEmail: "hello@rabiel.dev",
   abouttext:
@@ -36,6 +36,22 @@ export default {
     },
     {
       id: 4,
+      title: "Transatour",
+      service: "Fullstack Javascript Engineer",
+      imageSrc:
+        "https://lh3.googleusercontent.com/fJiw5Q_WKXU0W4DfHTVU8WMT03JaP4YAoWzKSZszDCifu6jB0DSZKj9wHFmOm8Lveks=s360-rw",
+      url: "https://play.google.com/store/apps/details?id=com.Transatour.MobileApplication&hl=en",
+    },
+    {
+      id: 5,
+      title: "Autobroker",
+      service: "Fullstack Javascript Engineer",
+      imageSrc:
+        "https://lh3.googleusercontent.com/AgVHLcZ4LjTqZ9tBQ1V1aFjtrWDMzYTHpI8f8a-bCVYDmd0-fiYrIZV2mX2GW6Aw2A=s360-rw",
+      url: "https://play.google.com/store/apps/details?id=io.autobroker.airinvest&hl=en",
+    },
+      {
+      id: 6,
       title: "C-001-HUNA",
       service: "Fullstack Javascript Engineer",
       imageSrc:
@@ -43,17 +59,6 @@ export default {
       url: "https://devpost.com/software/huna",
     },
 
-    /*
-
-                    If You Want To Add More Project just Copy and Paste This At The End (Update the id Respectively)
-                ,{
-                id: 5,
-                title: 'Project Five',
-                service: 'Something Amazing',
-                imageSrc: "",
-                url: ''
-            }
-                */
   ],
   social: [
     { name: "Gitlab", url: "https://gitlab.com/rabieLakhdar" },
