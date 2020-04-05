@@ -70,6 +70,9 @@ nav li .link{
 }
 li .link:hover{
   opacity: 1;
+  color: white;
+  background-color: black;
+  border-radius: 4px;
 }
 .active{
   color:black;
@@ -142,8 +145,8 @@ li .link:hover{
 }
 
 .project img{
-width: 30em;  
-height: 30em;
+width: 25em;  
+height: 25em;
 }
 .contact{
   position: relative;
