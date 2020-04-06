@@ -78,25 +78,33 @@ li .link:hover{
   color:black;
   opacity: 1;
 }
-
-.header-title button{
+.header-title {
+  display: grid;
+}
+.header-title a{
+  width: 120px;
   background: black;
-  border: 0px;
-  padding: 1em 3em;
+  border-radius: 3px;
   transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -ms-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
-}
-.header-title button:hover{
-  opacity: 0.8;
-}
-.header-title button a{
+  cursor: pointer;
+  margin:1em;
+  padding:0.4em;
+  outline: none;
   font-family: 'Open Sans', sans-serif;
+  font-size: 0.4em;
+  text-align: center;
   color:white;
   text-decoration: none;
 }
+
+.header-title a:hover{
+  opacity: 0.8;
+}
+
 .header-title{
   position: relative;
   font-family: 'Montserrat', sans-serif;
