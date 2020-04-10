@@ -1,19 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Fade from 'react-reveal/Fade';
 import data from '../data';
 import { Link } from "react-scroll";
-import Logo from '../assetes/logo.png';
+import logo from '../assetes/logo.png';
 
 
-class Header extends Component {
-    state = {}
-
-    render() {
+const Header = () => {
         return (<div>
         <h1 className='heading-background'>RABIEL</h1>
             <header>
                 <h1>
-                    <Fade bottom cascade><img style={{width:'250px', height:'100px'}} src={Logo} alt='rabiel'></img></Fade></h1>
+                    <Fade bottom cascade><img style={{width:'250px', height:'100px'}} src={logo} alt='rabiel'></img></Fade></h1>
             </header>
             <Fade bottom>
             <p className='header-title'>
@@ -24,11 +21,7 @@ class Header extends Component {
                 >Contact</Link>
                 </p>
             </Fade>
-
-
-
         </div>);
-    }
 }
 
 export default Header;

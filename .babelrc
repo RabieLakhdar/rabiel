@@ -1,0 +1,9 @@
+{
+    "presets": ["env", "react", "stage-0"],
+    "plugins": [
+      ["@babel/transform-react-jsx", {
+        "pragma": "dom",
+        "throwIfNamespace": false
+      }]
+    ]
+  }

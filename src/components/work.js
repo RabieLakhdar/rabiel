@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Project from './project';
 import Fade from 'react-reveal/Fade';
 import data from '../data';
 
-class Work extends Component {
-    state = {  }
-    render() { 
+
+const Work = () => { 
         return (<div>
         <h1 className='heading'>
         <Fade bottom cascade>Work.</Fade></h1>
@@ -20,7 +19,6 @@ class Work extends Component {
                 ))}
         </div>
         </div>  );
-    }
 }
  
 export default Work;
