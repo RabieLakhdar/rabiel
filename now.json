@@ -2,7 +2,8 @@
     "version": 2,
     "name": "rabiel",
     "builds": [
-        { "src": "package.json", "use": "@now/static-build" }
+        { "src": "package.json", "use": "@now/static-build" },
+        { "env": { "NODE_PATH": "@node_path" } }
     ],
     "routes": [
       {"src": "^/static/(.*)", "dest": "/static/$1"},
