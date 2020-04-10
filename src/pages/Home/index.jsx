@@ -7,7 +7,7 @@ import Work from 'components/work';
 import Contact from 'components/Contact';
 import Navbar from 'components/Navbar'
 
-function App() {
+function Home() {
   return (
     <div className="App">
       <Navbar></Navbar>
@@ -28,4 +28,4 @@ function App() {
   );
 }
 
-export default App;
+export default home;
