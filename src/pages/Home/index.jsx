@@ -1,11 +1,9 @@
 import React from 'react';
-import 'App.css';
-
-import Header from 'components/Header';
-import About from 'components/About';
-import Work from 'components/work';
-import Contact from 'components/Contact';
-import Navbar from 'components/Navbar'
+import Header from '../../components/Header';
+import About from '../../components/About';
+import Work from '../../components/work';
+import Contact from '../../components/Contact';
+import Navbar from '../../components/Navbar'
 
 function Home() {
   return (
@@ -28,4 +26,4 @@ function Home() {
   );
 }
 
-export default home;
+export default Home;

@@ -1,10 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import Fade from "react-reveal/Fade";
 import data from "../data";
 
-class Contact extends Component {
-  state = {};
-  render() {
+const Contact = () => {
     return (
       <div>
         <h1>
@@ -46,7 +44,6 @@ class Contact extends Component {
         </span>
       </div>
     );
-  }
 }
 
 export default Contact;
