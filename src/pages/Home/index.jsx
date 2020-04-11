@@ -4,6 +4,7 @@ import About from '../../components/About';
 import Work from '../../components/work';
 import Contact from '../../components/Contact';
 import Navbar from '../../components/Navbar'
+import '../../App.css';
 
 function Home() {
   return (
