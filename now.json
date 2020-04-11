@@ -8,8 +8,5 @@
 
     "routes": [
       {"src": "/.*", "dest": "/index.html"}
-    ],
-    "alias": ["rabiel.dev", "my-alias"],
-    "public": true,
-    "collectMetrics": true
+    ]
 }
