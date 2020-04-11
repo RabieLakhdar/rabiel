@@ -8,8 +8,7 @@ export default () => {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/sitemap.xml" component={SiteMap} />
-         <Route component={Home} />
+        <Route exact path="/sitem" component={SiteMap} />
       </Switch>
     </BrowserRouter>
   )
