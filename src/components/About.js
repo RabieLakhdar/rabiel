@@ -1,7 +1,6 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import data from "../data";
-import aboutP from "../assetes/rabiel.png";
 
 const About = () => {
   return (
@@ -19,7 +18,7 @@ const About = () => {
       {data.ShowAboutImage ? (
         <img
           style={{ width: "600px", height: "600px" }}
-          src={aboutP}
+          src="https://s4.aconvert.com/convert/p3r68-cdx67/ao829-8h3pm.svg"
           alt="rabiel"
         ></img>
       ) : null}
