@@ -18,7 +18,7 @@ const About = () => {
       {data.ShowAboutImage ? (
         <img
           style={{ width: "600px", height: "600px" }}
-          src="https://s4.aconvert.com/convert/p3r68-cdx67/ao829-8h3pm.svg"
+          src="https://svgshare.com/i/KBa.svg"
           alt="rabiel"
         ></img>
       ) : null}

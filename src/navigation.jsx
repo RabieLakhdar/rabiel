@@ -1,15 +1,18 @@
-import React from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import Home from './pages/Home'
-import SiteMap from './pages/SiteMap'
+import React, { lazy, Suspense } from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
+const Home = lazy(() => import("./pages/Home"));
+const SiteMap = lazy(() => import("./pages/SiteMap"));
 
 export default () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/sitem" component={SiteMap} />
+        <Suspense fallback={<div>...Loading</div>}>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/sitem" component={SiteMap} />
+        </Suspense>
       </Switch>
     </BrowserRouter>
-  )
-}
+  );
+};
