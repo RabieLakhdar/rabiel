@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ memo} from "react";
 import Fade from "react-reveal/Fade";
 import data from "../data";
 
@@ -26,4 +26,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default memo(About);

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{memo} from "react";
 import Fade from 'react-reveal/Fade';
 
 const Project = props => {
@@ -14,4 +14,4 @@ const Project = props => {
             </Fade>);
 }
  
-export default Project;
+export default memo(Project);

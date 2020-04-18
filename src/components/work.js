@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{memo} from "react";
 import Project from './project';
 import Fade from 'react-reveal/Fade';
 import data from '../data';
@@ -21,4 +21,4 @@ const Work = () => {
         </div>  );
 }
  
-export default Work;
+export default memo(Work);

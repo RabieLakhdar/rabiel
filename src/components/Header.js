@@ -1,4 +1,4 @@
-import React from "react";
+import React,{memo} from "react";
 import Fade from "react-reveal/Fade";
 import data from "../data";
 import { Link } from "react-scroll";
@@ -32,4 +32,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default memo(Header);

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{memo} from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 
@@ -49,4 +49,4 @@ const Navbar = () => {
         </nav> );
 }
  
-export default Navbar;
+export default memo(Navbar);
