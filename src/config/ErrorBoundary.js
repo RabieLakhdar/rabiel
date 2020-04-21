@@ -22,11 +22,15 @@ class ErrorBoundary extends React.Component {
             display: "flex",
             justifyContent: "center",
             flexDirection: "column",
-            marginTop:'10%'
+            marginTop: "10%",
           }}
         >
-          <img src="https://i.ibb.co/m8dLS0z/Ghost-big.png" alt="Rabiel" style={{ margin: '0 auto', width: '250px'}} />
-          <h3 style={{textAlign:'center'}}>Something went wrong </h3>
+          <img
+            src="https://i.ibb.co/m8dLS0z/Ghost-big.png"
+            alt="rabiel, rabie lakhdar remote developer"
+            style={{ margin: "0 auto", width: "250px" }}
+          />
+          <h3 style={{ textAlign: "center" }}>Something went wrong </h3>
         </div>
       );
     }

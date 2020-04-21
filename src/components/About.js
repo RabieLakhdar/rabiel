@@ -8,7 +8,7 @@ const About = () => {
       <div className="about-content">
         <h1>
           <Fade bottom cascade>
-            Who Am I?
+            Rabiel,?
           </Fade>
         </h1>
         <Fade bottom>
@@ -19,7 +19,7 @@ const About = () => {
         <img
           style={{ width: "600px", height: "600px" }}
           src="https://svgshare.com/i/KBa.svg"
-          alt="rabiel"
+          alt="rabiel, rabie lakhdar remote developer"
         ></img>
       ) : null}
     </div>
