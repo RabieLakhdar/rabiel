@@ -23,7 +23,7 @@ const Header = () => {
           <br></br>
           {data.headerTagline[2]}
           <Link to="contact">
-            <span>Contact</span>
+            <span>Contact me</span>
           </Link>
         </p>
       </Fade>
