@@ -1,4 +1,4 @@
-import React,{ memo} from "react";
+import React, { memo } from "react";
 import Fade from "react-reveal/Fade";
 import data from "../data";
 
@@ -17,7 +17,6 @@ const About = () => {
       </div>
       {data.ShowAboutImage ? (
         <img
-          style={{ width: "600px", height: "600px" }}
           src="https://svgshare.com/i/KBa.svg"
           alt="rabiel, rabie lakhdar remote developer"
         ></img>
