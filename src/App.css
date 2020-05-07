@@ -377,7 +377,9 @@ li .link:hover {
     margin-top: 2.5em;
     width: 15em;
     height: 2em;
-    text-align: center;
+    display: table;
+  }
+  .header-title a span {
     vertical-align: middle;
   }
 

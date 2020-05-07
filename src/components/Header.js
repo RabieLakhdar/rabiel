@@ -1,4 +1,4 @@
-import React,{memo} from "react";
+import React, { memo } from "react";
 import Fade from "react-reveal/Fade";
 import data from "../data";
 import { Link } from "react-scroll";
@@ -11,10 +11,7 @@ const Header = () => {
       <header>
         <h1>
           <Fade bottom cascade>
-            <Logo
-              style={{ width: "260px", height: "185px" }}
-              alt="rabiel"
-            />
+            <Logo style={{ width: "260px", height: "185px" }} alt="rabiel" />
           </Fade>
         </h1>
       </header>
@@ -25,7 +22,9 @@ const Header = () => {
           {data.headerTagline[1]}
           <br></br>
           {data.headerTagline[2]}
-          <Link to="contact">Contact</Link>
+          <Link to="contact">
+            <span>Contact</span>
+          </Link>
         </p>
       </Fade>
     </div>
