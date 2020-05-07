@@ -381,6 +381,7 @@ li .link:hover {
   }
   .header-title a span {
     vertical-align: middle;
+    text-align: center;
   }
 
   .about {
