@@ -74,7 +74,7 @@ export default {
     },
     {
       name: "Instagram",
-      url: "https://www.instagram.com/rabie_lakhdar",
+      url: "https://www.instagram.com/rabiel.dev",
     },
   ],
 };
