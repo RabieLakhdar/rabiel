@@ -7,7 +7,7 @@ export default {
   ],
   contactEmail: "hello@rabiel.dev",
   abouttext:
-    "Rabie LAKHDAR 25 yo, living in Casablanca, Have Software Engineer Diploma on university Suptechnology, Bachelor degree of Development Internet and Mobile from University Littoral Côte d'Opale (ULCO) and Master Degree of software engineering from University Pays de l'adour PAU (UPPA). About pro rating, I have four years of experience in Full stack JS Engineer (ReactJs, React native, NodeJs, GraphQL) with different clients in France, Morocco, Saudi Arabia, Italia and Czech. And I’m Curious, passionate about new technologies and always eager to learn and share knowledge in the field of programming.",
+    "Rabie LAKHDAR 25 yo, living in Casablanca, Have Software Engineer Diploma on university Suptechnology, Bachelor degree of Development Internet and Mobile from University Littoral Côte d'Opale (ULCO) and Master Degree of software engineering from University Pays de l'adour PAU (UPPA). About pro rating, I have four years of experience in Full stack JS Engineer (ReactJs, React native, NodeJs, GraphQL) with different clients in France, Morocco, Saudi Arabia, Italia and Czech. And I’m Curious, passionate about new technologies and always eager to learn and share knowledge in the field of programming ⚛️.",
   ShowAboutImage: true, 
   projects: [
     {
