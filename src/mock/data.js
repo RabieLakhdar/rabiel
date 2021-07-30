@@ -8,14 +8,14 @@ export const headData = {
 
 export const heroData = {
   title: "Hi, I'm",
-  name: 'Rabie LAKHDAR',
-  subtitle: 'Full stack JS Engineer',
+  name: ' Rabie LAKHDAR',
+  subtitle: 'Full stack JS Engineer 🧞',
   cta: 'More',
 };
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
+  img: 'profile.png',
   paragraphOne:
     "Rabie LAKHDAR 27 yo, Living in Casablanca, Have Software Engineer Diploma on university Suptechnology, Bachelor degree of Development Internet and Mobile from University Littoral Côte d'Opale (ULCO) and Master Degree of software engineering from University Pays de l'adour PAU (UPPA).",
   paragraphTwo:
