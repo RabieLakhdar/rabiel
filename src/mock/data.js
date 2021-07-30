@@ -21,7 +21,7 @@ export const aboutData = {
   paragraphTwo:
     'About pro rating, I have 5 years of experience in Full stack JS Engineer (ReactJs, React native, NodeJs, GraphQL) with different clients in France, Morocco, Saudi Arabia, Italia and Czech. And I’m Curious, passionate about new technologies and always eager to learn and share knowledge in the field of programming.',
   paragraphThree: '#reactjs #reactnative #nodejs',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  resume: true,
 };
 
 // PROJECTS DATA
