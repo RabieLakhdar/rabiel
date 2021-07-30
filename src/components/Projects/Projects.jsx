@@ -28,7 +28,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, height, width, info2, url, repo, img, id } = project;
 
             return (
               <Row key={id}>
@@ -99,8 +99,12 @@ const Projects = () => {
                             easing: 'cubic-bezier(.03,.98,.52,.99)',
                           }}
                         >
-                          <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
+                          <div
+                            data-tilt
+                            className="thumbnail rounded"
+                            style={{ justifyContent: 'center', display: 'flex' }}
+                          >
+                            <ProjectImg alt={title} filename={img} height={height} width={width} />
                           </div>
                         </Tilt>
                       </a>
