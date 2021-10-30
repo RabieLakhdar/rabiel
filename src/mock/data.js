@@ -28,6 +28,16 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'saham.png',
+    height: '250px',
+    width: '250px',
+    title: 'SAHAM Insurance Morocco',
+    info: 'new version of the SAHAM Insurance mobile application, including many practical services and innovative features',
+    info2: 'you can find more details of store',
+    url: 'https://play.google.com/store/apps/details?id=ma.tnc.sahamassurance&gl=MA',
+  },
+  {
+    id: nanoid(),
     img: 'enzym.png',
     height: '250px',
     width: '250px',
@@ -39,24 +49,13 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'tlmam.png',
+    img: 'bp.jpeg',
     height: '250px',
     width: '250px',
-    title: 'TLMAM Social Service',
-    info: 'TLMAM its first Mobile App on North Africa for social and finance services, let maghreb citizen to make active income with many investments',
-    info2: 'this app allowed for all citizen North Africa',
-    url: 'https://tlmam.com',
-  },
-  {
-    id: nanoid(),
-    img: 'teeela.png',
-    height: '250px',
-    width: '250px',
-    title: 'Teeela',
-    info: 'Teeela is a leading app for online toys shopping in GCC where you shop through a wide range of toys from different brands and categories. Discover new and exclusive toys for kids on Teeela.',
-    info2:
-      'Teeela Toys makes it easier than ever to offer the gift your children most wants. Enjoy the exclusive offers and get to know the toys that perfectly fit your kids’s interest.',
-    url: 'https://play.google.com/store/apps/details?id=com.teeelamob&hl=en',
+    title: 'Banque Centrale Populaire - BCP',
+    info: 'Work of products Insurance features with BCP environnement, more details its confidence ',
+    info2: null,
+    url: 'https://bpnet.gbp.ma',
   },
 ];
 
