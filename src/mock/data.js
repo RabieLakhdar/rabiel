@@ -17,9 +17,9 @@ export const heroData = {
 export const aboutData = {
   img: 'profile.png',
   paragraphOne:
-    "Rabie LAKHDAR 27 yo, Living in Casablanca, Have Software Engineer Diploma on university Suptechnology, Bachelor degree of Development Internet and Mobile from University Littoral Côte d'Opale (ULCO) and Master Degree of software engineering from University Pays de l'adour PAU (UPPA).",
+    "I've been working on both frontend and backend projects since the beginning of my career with popular clients in Morocco, so I know how to convert your needs into released solution.",
   paragraphTwo:
-    'About pro rating, I have 5 years of experience in Full stack JS Engineer (ReactJs, React native, NodeJs, GraphQL) with different clients in France, Morocco, Saudi Arabia, Italia and Czech. And I’m Curious, passionate about new technologies and always eager to learn and share knowledge in the field of programming.',
+  'I have experience building applications with React, React Native & NodeJS. The last few years have been spent learning how to build decentralized applications based on Ethereum, also using web3 libraries.',
   paragraphThree: '#reactjs #reactnative #nodejs',
   resume: true,
 };
