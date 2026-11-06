@@ -1,134 +1,185 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import {
+  Globe2,
+  Briefcase,
+  MapPin,
+  Smartphone,
+  Layout,
+  Server,
+  Users,
+} from 'lucide-react';
 import profileImage from '../assets/rabielakhdar.png';
-import { Code2, Brain, Smartphone, Database, Users, Trophy, Rocket, BookOpen } from 'lucide-react';
+import { portfolioData, SkillGroup } from '../data/portfolioData';
 
-const About = () => {
+const skillCategoryIcons: Record<SkillGroup['id'], React.ReactNode> = {
+  mobile: <Smartphone size={18} className="text-blue-700" aria-hidden="true" />,
+  frontend: <Layout size={18} className="text-blue-700" aria-hidden="true" />,
+  backend: <Server size={18} className="text-blue-700" aria-hidden="true" />,
+  leadership: <Users size={18} className="text-blue-700" aria-hidden="true" />,
+};
+
+const About: React.FC = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.08,
   });
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-      },
-    },
-  };
+  const { profile, about, skills } = portfolioData;
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-b from-white to-indigo-50">
+    <section
+      id="about"
+      aria-labelledby="about-section-heading"
+      className="py-20 lg:py-28 bg-slate-50 border-b border-slate-200/80"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
-          variants={containerVariants}
-          initial="hidden"
-          animate={inView ? "visible" : "hidden"}
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.45 }}
           className="space-y-16"
         >
-          <motion.div variants={itemVariants} className="text-center">
-            <span className="inline-block px-4 py-1.5 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium mb-5">
-              About Me
+          {/* Section Header (H2 first in DOM for strict H1 -> H2 -> H3 hierarchy) */}
+          <div className="max-w-3xl">
+            <span className="inline-block font-mono text-xs font-semibold uppercase tracking-widest text-blue-700 mb-3">
+              {about.badge}
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Turning Vision Into Reality
+            <h2
+              id="about-section-heading"
+              className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-950 leading-tight"
+            >
+              {about.heading}
             </h2>
-          </motion.div>
+          </div>
 
-          <motion.div variants={itemVariants} className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative max-w-lg mx-auto lg:mx-0">
-              <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-3xl transform rotate-6 opacity-20"></div>
-              <img
-                src={profileImage}
-                alt="Rabie Lakhdar - Senior Full Stack JavaScript Developer"
-                className="relative rounded-3xl shadow-xl w-full max-w-md mx-auto object-cover transform hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-
-            <div className="space-y-8">
-              <motion.p variants={itemVariants} className="text-xl text-gray-700 leading-relaxed">
-                With over 8 years of experience in crafting innovative mobile and web applications,
-                I specialize in delivering high-impact solutions for banks and insurance companies
-                as a Senior Full Stack JavaScript Developer.
-              </motion.p>
-
-              <motion.div variants={itemVariants} className="grid grid-cols-2 gap-6">
-                <div className="p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                  <Users className="w-8 h-8 text-indigo-600 mb-2" />
-                  <h3 className="font-semibold text-gray-900">15+</h3>
-                  <p className="text-gray-600">Projects Delivered</p>
+          {/* Profile Card + T-Shaped Senior Engineering Narrative */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+            {/* Left Column: Portrait & Executive Facts */}
+            <div className="lg:col-span-4">
+              <div className="rounded-2xl bg-white border border-slate-200/90 p-6 sm:p-8 shadow-sm">
+                <div className="flex flex-col items-center text-center">
+                  <img
+                    src={profileImage}
+                    alt={`${profile.name} — ${profile.title}`}
+                    className="w-40 h-40 sm:w-44 sm:h-44 rounded-full object-cover ring-4 ring-slate-100 shadow-md mb-5 bg-slate-50"
+                  />
+                  <p className="text-xl font-bold text-slate-950">{profile.name}</p>
+                  <p className="text-sm font-semibold text-blue-700 mt-1">
+                    {profile.currentRole} • {profile.currentCompany}
+                  </p>
+                  <p className="text-xs font-mono text-slate-500 mt-1.5">
+                    {profile.yearsOfExperience} Years • {profile.shippedProductsCount} Shipped Apps
+                  </p>
                 </div>
-                <div className="p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                  <Trophy className="w-8 h-8 text-indigo-600 mb-2" />
-                  <h3 className="font-semibold text-gray-900">8+</h3>
-                  <p className="text-gray-600">Years Experience</p>
-                </div>
-              </motion.div>
 
-              <motion.div variants={itemVariants} className="space-y-6">
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
-                    <Rocket className="text-indigo-600" />
-                    Technical Expertise
-                  </h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="flex items-center gap-2 bg-white p-3 rounded-lg shadow-sm">
-                      <Code2 className="text-indigo-600" />
-                      <span>React & Next.js</span>
+                <div className="mt-6 pt-6 border-t border-slate-100 space-y-4 text-sm">
+                  <div className="flex items-start gap-3">
+                    <MapPin size={17} className="text-slate-500 shrink-0 mt-0.5" aria-hidden="true" />
+                    <div>
+                      <p className="font-semibold text-slate-900">Base &amp; Timezone</p>
+                      <p className="text-slate-600 text-xs mt-0.5 leading-relaxed">
+                        {profile.locationCity} • {profile.timezone}
+                      </p>
                     </div>
-                    <div className="flex items-center gap-2 bg-white p-3 rounded-lg shadow-sm">
-                      <Smartphone className="text-indigo-600" />
-                      <span>React Native</span>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <Briefcase size={17} className="text-slate-500 shrink-0 mt-0.5" aria-hidden="true" />
+                    <div>
+                      <p className="font-semibold text-slate-900">Remote Engagement</p>
+                      <p className="text-slate-600 text-xs mt-0.5 leading-relaxed">
+                        EOR (Deel / Remote.com) or Long-Term B2B Contractor
+                      </p>
                     </div>
-                    <div className="flex items-center gap-2 bg-white p-3 rounded-lg shadow-sm">
-                      <Database className="text-indigo-600" />
-                      <span>Node.js Backend</span>
-                    </div>
-                    <div className="flex items-center gap-2 bg-white p-3 rounded-lg shadow-sm">
-                      <Brain className="text-indigo-600" />
-                      <span>AI & Automation</span>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <Globe2 size={17} className="text-slate-500 shrink-0 mt-0.5" aria-hidden="true" />
+                    <div>
+                      <p className="font-semibold text-slate-900">Languages</p>
+                      <p className="text-slate-600 text-xs mt-0.5 leading-relaxed">
+                        {profile.languagesSummary}
+                      </p>
                     </div>
                   </div>
                 </div>
-
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
-                    <BookOpen className="text-indigo-600" />
-                    Professional Growth
-                  </h3>
-                  <ul className="space-y-3 text-gray-700">
-                    <li className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-indigo-600 rounded-full"></div>
-                      Mentored junior developers and led team initiatives
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-indigo-600 rounded-full"></div>
-                      Implemented cutting-edge technologies in production
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-indigo-600 rounded-full"></div>
-                      Optimized development workflows and processes
-                    </li>
-                  </ul>
-                </div>
-              </motion.div>
+              </div>
             </div>
-          </motion.div>
+
+            {/* Right Column: T-Shaped Engineering Narrative */}
+            <div className="lg:col-span-8 space-y-6">
+              <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
+                {about.lead}
+              </p>
+
+              <p className="text-base text-slate-600 leading-relaxed">
+                {about.body}
+              </p>
+
+              {/* T-Shaped Engineering Dimensions */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+                {about.tShapedDimensions.map((dim) => (
+                  <div
+                    key={dim.id}
+                    className="rounded-xl bg-white border border-slate-200/90 p-5 shadow-sm"
+                  >
+                    <span className="block font-mono text-[11px] font-semibold uppercase tracking-wider text-blue-700 mb-2">
+                      {dim.axisLabel}
+                    </span>
+                    <h3 className="text-sm font-bold text-slate-900 mb-2 leading-snug">
+                      {dim.title}
+                    </h3>
+                    <p className="text-xs text-slate-600 leading-relaxed">
+                      {dim.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Recruiter-Scannable Technical Stack Categories */}
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-950">
+                Technical Stack &amp; Core Capabilities
+              </h3>
+              <p className="text-sm text-slate-600 mt-1">
+                Production-tested tools organized across mobile runtimes, web frontends, cloud backends, and squad leadership.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+              {skills.map((group) => (
+                <div
+                  key={group.id}
+                  id={`skill-group-${group.id}`}
+                  className="rounded-2xl bg-white border border-slate-200/90 p-6 shadow-sm flex flex-col"
+                >
+                  <div className="flex items-center gap-2.5 pb-4 mb-4 border-b border-slate-100">
+                    <div className="h-9 w-9 rounded-lg bg-slate-100 border border-slate-200/70 flex items-center justify-center shrink-0">
+                      {skillCategoryIcons[group.id]}
+                    </div>
+                    <h4 className="text-base font-bold text-slate-950">{group.category}</h4>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2">
+                    {group.skills.map((skill) => (
+                      <span
+                        key={skill}
+                        className="inline-flex items-center rounded-lg bg-slate-50 border border-slate-200/90 px-2.5 py-1.5 text-xs font-medium text-slate-800"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>
