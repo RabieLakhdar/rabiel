@@ -369,7 +369,7 @@ const Contact: React.FC = () => {
               </div>
 
               <p className="text-xs text-slate-500 mt-6 pt-4 border-t border-slate-100">
-                Typical response time: within 24 hours across GMT+1 / CET business hours.
+                Typical response time: within 24 hours across GMT business hours.
               </p>
             </div>
           </div>

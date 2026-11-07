@@ -123,12 +123,12 @@ export const portfolioData = {
     schemaJobTitle: 'Senior React Native & Full-Stack Engineer',
     currentRole: 'Senior Consultant',
     currentCompany: 'Maltem Africa',
-    yearsOfExperience: '8+',
+    yearsOfExperience: '10+',
     shippedProductsCount: '15+',
     locationCity: 'Casablanca, Morocco',
-    timezone: 'CET / GMT+1',
+    timezone: 'GMT',
     timezoneDetail:
-      'Casablanca, Morocco (GMT+1 / CET — full workday overlap with UK & Europe, morning overlap with US East)',
+      'Casablanca, Morocco (GMT — full workday overlap with UK & Europe, morning overlap with US East)',
     targetRegions: 'Europe, the UK, and North America',
     targetRolesSummary:
       'Senior React Native Engineer • Lead Mobile Developer • Senior Full-Stack Engineer (TypeScript / React / Node.js)',
@@ -141,7 +141,7 @@ export const portfolioData = {
     ],
     languagesSummary: 'English (Full Professional) • French (Bilingual) • Arabic (Native)',
     shortBio:
-      'T-shaped Senior React Native & Full-Stack TypeScript Engineer with 8+ years of experience delivering secure, high-availability Mobile (iOS & Android) and Web applications across Banking, FinTech, Insurance, and SaaS.',
+      'T-shaped Senior React Native & Full-Stack TypeScript Engineer with 10+ years of experience delivering secure, high-availability Mobile (iOS & Android) and Web applications across Banking, FinTech, Insurance, and SaaS.',
   },
 
   socials: {
@@ -172,11 +172,11 @@ export const portfolioData = {
 
   hero: {
     availabilityBadge:
-      'Available for International Remote Roles • GMT+1 / CET (Full EU & UK Overlap)',
+      'Available for International Remote Roles • GMT (Full UK & EU Overlap)',
     eyebrow: 'Rabie Lakhdar • Senior Consultant at Maltem Africa',
     headline: 'Senior React Native & Full-Stack TypeScript Engineer',
     subheadline:
-      '8+ years architecting and shipping high-trust Mobile (iOS & Android) and Full-Stack Web applications for Banking, Insurance, and SaaS teams.',
+      '10+ years architecting and shipping high-trust Mobile (iOS & Android) and Full-Stack Web applications for Banking, Insurance, and SaaS teams.',
     ctas: {
       primary: {
         label: 'View Case Studies',
@@ -193,9 +193,9 @@ export const portfolioData = {
     },
     proofStrip: [
       {
-        value: '8+ Years',
+        value: '10+ Years',
         label: 'Experience',
-        fullText: '8+ Years Experience',
+        fullText: '10+ Years Experience',
       },
       {
         value: '15+ Production',
@@ -208,9 +208,9 @@ export const portfolioData = {
         fullText: 'iOS, Android & Web',
       },
       {
-        value: 'CET / GMT+1',
-        label: 'Timezone',
-        fullText: 'CET / GMT+1 Timezone',
+        value: 'GMT',
+        label: 'Casablanca Timezone',
+        fullText: 'GMT Timezone',
       },
     ] satisfies ProofItem[],
   },
@@ -355,8 +355,8 @@ export const portfolioData = {
   about: {
     badge: 'About & Technical Stack',
     heading: 'T-Shaped Senior Engineering: Mobile Depth Meets Full-Stack Execution',
-    lead: 'Over 8+ years shipping 15+ production products—currently as a Senior Consultant at Maltem Africa—I combine deep specialist mastery in React Native mobile engineering with pragmatic full-stack TypeScript execution across web, APIs, and cloud infrastructure.',
-    body: 'That T-shaped profile lets me own critical features end-to-end without handoff friction: from native iOS/Android runtime nuances and resilient e-KYC/NFC flows, up through React/Next.js design systems, Node.js/GraphQL backends, and AWS CI/CD pipelines. Based in Casablanca (CET / GMT+1) and fluent in English, French, and Arabic, I partner seamlessly with product and engineering squads across Europe, the UK, and North America.',
+    lead: 'Over 10+ years shipping 15+ production products—currently as a Senior Consultant at Maltem Africa—I combine deep specialist mastery in React Native mobile engineering with pragmatic full-stack TypeScript execution across web, APIs, and cloud infrastructure.',
+    body: 'That T-shaped profile lets me own critical features end-to-end without handoff friction: from native iOS/Android runtime nuances and resilient e-KYC/NFC flows, up through React/Next.js design systems, Node.js/GraphQL backends, and AWS CI/CD pipelines. Based in Casablanca (GMT) and fluent in English, French, and Arabic, I partner seamlessly with product and engineering squads across Europe, the UK, and North America.',
     tShapedDimensions: [
       {
         id: 'vertical-depth',
@@ -447,7 +447,7 @@ export const portfolioData = {
       company: 'Maltem Africa',
       // [TODO: Add exact start year/month at Maltem Africa, e.g. "2022 – Present"]
       period: 'Current • Senior Consulting',
-      location: 'Casablanca, Morocco • CET / GMT+1',
+      location: 'Casablanca, Morocco • GMT',
       summary:
         'Leading mobile and full-stack TypeScript delivery for regulated Banking, Insurance, and enterprise SaaS engagements across distributed Agile/Scrum squads.',
       highlights: [
@@ -471,7 +471,7 @@ export const portfolioData = {
       role: 'Full-Stack JavaScript & Mobile Engineer',
       company: 'Banking, Insurance & SaaS Product Deliveries',
       // [TODO: Replace with exact prior employer names and dates from your CV when ready]
-      period: '8+ Years Total Career Progression',
+      period: '10+ Years Total Career Progression',
       location: 'Mobile (iOS & Android) & Full-Stack Web',
       summary:
         'Delivered 15+ production mobile and web products end-to-end across financial services, insurance workflows, and commercial SaaS platforms.',
@@ -634,7 +634,7 @@ export const portfolioData = {
         id: 'location',
         label: 'Location & Timezone',
         value:
-          'Casablanca, Morocco (GMT+1 / CET — full workday overlap with UK & Europe, morning overlap with US East)',
+          'Casablanca, Morocco (GMT — full workday overlap with UK & Europe, morning overlap with US East)',
       },
       {
         id: 'languages',

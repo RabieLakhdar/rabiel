@@ -39,7 +39,7 @@
     <g transform="translate(604, 8)">
       <rect width="424" height="40" rx="20" fill="#064e3b" fill-opacity="0.45" stroke="#10b981" stroke-opacity="0.45" stroke-width="1.5" />
       <circle cx="22" cy="20" r="5" fill="#34d399" />
-      <text x="38" y="25" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" font-weight="600" fill="#d1fae5">INTERNATIONAL REMOTE • CET / GMT+1</text>
+      <text x="38" y="25" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" font-weight="600" fill="#d1fae5">INTERNATIONAL REMOTE • CASABLANCA (GMT)</text>
     </g>
   </g>
 
@@ -47,7 +47,7 @@
   <g transform="translate(88, 224)">
     <text x="0" y="0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="64" font-weight="800" fill="#f8fafc" letter-spacing="-1.8">Rabie Lakhdar</text>
     <text x="0" y="62" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="600" fill="#38bdf8" letter-spacing="-0.6">Senior React Native &amp; Full-Stack TypeScript Engineer</text>
-    <text x="0" y="114" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="21" font-weight="400" fill="#cbd5e1">8+ years architecting high-trust Mobile (iOS &amp; Android) and Web platforms for Banking, Insurance &amp; SaaS.</text>
+    <text x="0" y="114" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="21" font-weight="400" fill="#cbd5e1">10+ years architecting high-trust Mobile (iOS &amp; Android) and Web platforms for Banking, Insurance &amp; SaaS.</text>
   </g>
 
   <!-- Core Stack Pills -->
@@ -80,7 +80,7 @@
   <!-- Bottom Proof Bar & Domain -->
   <g transform="translate(88, 532)">
     <text x="0" y="0" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="600" fill="#94a3b8">
-      <tspan fill="#f8fafc">8+ Years</tspan> Experience   •   <tspan fill="#f8fafc">15+ Production</tspan> Apps   •   <tspan fill="#f8fafc">iOS, Android &amp; Web</tspan>   •   EN / FR / AR
+      <tspan fill="#f8fafc">10+ Years</tspan> Experience   •   <tspan fill="#f8fafc">15+ Production</tspan> Apps   •   <tspan fill="#f8fafc">iOS, Android &amp; Web</tspan>   •   EN / FR / AR
     </text>
     <text x="1024" y="0" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="22" font-weight="700" fill="#38bdf8">https://rabiel.dev</text>
   </g>
